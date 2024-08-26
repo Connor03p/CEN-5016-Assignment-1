@@ -6,7 +6,7 @@ export default (req: { params: { num: number; }; }, res: { send: (arg0 : string)
   const { num } = req.params;
 
   const fibN : number = fibonacci(num);
-  let result : string = `fibonacci(${num}) is ${fibN}`;
+  let result = `fibonacci(${num}) is ${fibN}`;
 
   if (fibN < 0) {
     result = `fibonacci(${num}) is undefined`;
